@@ -73,14 +73,14 @@ void HoVaTen() {
 	cout << "\t\t\t\t\t\t _______________________________________________________________\n";
 	cout << "\t\t\t\t\t\t|" << setw(45) << "<=: DE TAI :=> QUAN LY THU VIEN" << "                  |\n";
 	cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
-	cout << "\t\t\t\t\t\t|" << setw(40) << "GVHD : DAO TUYET HOA" << "                       |\n";
+	cout << "\t\t\t\t\t\t|" << setw(40) << "GVHD : DO THI TUYET HOA" << "                       |\n";
 	cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
 	cout << "\t\t\t\t\t\t|" << setw(40) << "SVTH : DANG QUOC KHANH" << "                       |\n";
 	cout << "\t\t\t\t\t\t|" << setw(32) << "Lop : 17T2" << "                               |\n";
 	cout << "\t\t\t\t\t\t|" << setw(38) << "MSSV : 102170093" << "                         |\n";
 	cout << "\t\t\t\t\t\t|" << setw(40) << "SVTH : DUONG CHI MANH" << "                       |\n";
 	cout << "\t\t\t\t\t\t|" << setw(32) << "Lop : 16T2" << "                               |\n";
-	cout << "\t\t\t\t\t\t|" << setw(38) << "MSSV : 1021600XX" << "                         |\n";
+	cout << "\t\t\t\t\t\t|" << setw(38) << "MSSV : 102160103" << "                         |\n";
 	cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
 	
 }
@@ -228,10 +228,17 @@ void menu4() {
 	cout << "\t\t\t\t\t\t|  2  |     Tim theo ten tac gia !                              |\n";
 	cout << "\t\t\t\t\t\t|  3  |     Tim theo ten nha xuat ban !                         |\n";
 	cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
-	int select;
+	char select;
 	cout << "\t\t\t\t\t\tTIM: ";
 	cin >> select;
-	list->timKiem(select);
+	if (int(select) <= 57 && int(select) >= 48) {
+		list->timKiem(select);
+	}
+	else {
+		cout << "\t\t\t\t\t\tLua chon " << select << " khong hop le !" << endl;
+		cout << "\t\t\t\t\t\tVui long nhap lai." << endl;
+	}
+	
 }
 
 void menu5() {
@@ -244,40 +251,53 @@ void menu5() {
 	cout << "\t\t\t\t\t\t|  3  |     Xem nhung cuon sach chua cho muon !                 |\n";
 	cout << "\t\t\t\t\t\t|  4  |     Xem nhung cuon sach theo thu tu !                   |\n";
 	cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
-	int select;
+	char select;
 	cout << "\t\t\t\t\t\tXEM: ";
 	cin >> select;
-	switch (select) {
-	case 1: {
-		
-		list->xemToanBoDanhSach(1);
-		break;
+	if (int(select) <= 57 && int(select) >= 48) {
+		switch (select) {
+		case '1': {
+
+			list->xemToanBoDanhSach(1);
+			break;
+		}
+		case '2': {
+			list->xemToanBoDanhSach(2);
+			break;
+		}
+		case '3': {
+			list->xemToanBoDanhSach(3);
+			break;
+		}
+		case '4': {
+			cout << endl;
+			cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+			cout << "\t\t\t\t\t\t|                 CAC LUA CHON XEM THEO THU TU                  |" << endl;
+			cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+			cout << "\t\t\t\t\t\t|  1  |     Xem dach theo van alphabet cua tac gia !            |\n";
+			cout << "\t\t\t\t\t\t|  2  |     Xem danh sach theo van alphabet cua nha xuat ban !  |\n";
+			cout << "\t\t\t\t\t\t|  3  |     Xem danh sach theo nam xuat ban !                   |\n";
+			cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+			cout << "\t\t\t\t\t\tXEM THEO: ";
+			char n;
+			cin >> n;
+			if (int(n) <= 57 && int(n) >= 48) {
+				list->xemTheoThuTu(n);
+			}
+			else {
+				cout << "\t\t\t\t\t\tLua chon " << select << " khong hop le !" << endl;
+				cout << "\t\t\t\t\t\tVui long nhap lai." << endl;
+			}
+			break;
+		}
+		default: break;
+		}
 	}
-	case 2: {
-		list->xemToanBoDanhSach(2);
-		break;
+	else {
+		cout << "\t\t\t\t\t\tLua chon " << select << " khong hop le !" << endl;
+		cout << "\t\t\t\t\t\tVui long nhap lai." << endl;
 	}
-	case 3: {
-		list->xemToanBoDanhSach(3);
-		break;
-	}
-	case 4: {
-		cout << endl;
-		cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
-		cout << "\t\t\t\t\t\t|                 CAC LUA CHON XEM THEO THU TU                  |" << endl;
-		cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
-		cout << "\t\t\t\t\t\t|  1  |     Xem dach theo van alphabet cua tac gia !            |\n";
-		cout << "\t\t\t\t\t\t|  2  |     Xem danh sach theo van alphabet cua nha xuat ban !  |\n";
-		cout << "\t\t\t\t\t\t|  3  |     Xem danh sach theo nam xuat ban !                   |\n";
-		cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
-		cout << "\t\t\t\t\t\tXEM THEO: ";
-		int n;
-		cin >> n;
-		list->xemTheoThuTu(n);
-		break;
-	}
-	default: break;
-	}
+	
 }
 
 void menu6() {
@@ -288,20 +308,27 @@ void menu6() {
 	cout << "\t\t\t\t\t\t|  1  |     Muon sach !                                         |\n";
 	cout << "\t\t\t\t\t\t|  2  |     Tra sach !                                          |\n";
 	cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
-	int select;
+	char select;
 	cout << "\t\t\t\t\t\tBAN MUON:" << endl;
 	cin >> select;
-	switch (select) {
-	case 1: {
-		list->muonSach();
-		break;
+	if (int(select) <= 57 && int(select) >= 48) {
+		switch (select) {
+		case '1': {
+			list->muonSach();
+			break;
+		}
+		case '2': {
+			list->traSach();
+			break;
+		}
+		default: break;
+		}
 	}
-	case 2: {
-		list->traSach();
-		break;
+	else {
+		cout << "\t\t\t\t\t\tLua chon " << select << " khong hop le !" << endl;
+		cout << "\t\t\t\t\t\tVui long nhap lai." << endl;
 	}
-	default: break;
-	}
+	
 }
 void menu7() {
 	list->ghiFile();

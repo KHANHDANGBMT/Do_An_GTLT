@@ -12,10 +12,10 @@ public:
 	 void init();
 	 void insertFirst(int x);
 	 void xemToanBoDanhSach(int pos);
-	 void xemTheoThuTu(int pos);
+	 void xemTheoThuTu(char pos);
 	 void xoaTheoViTri(int pos);
 	 void xoaSach(int pos);
-	 void timKiem(int pos);
+	 void timKiem(char pos);
 	 void dauBang();
 	 void thanBang(Node* node, int i);
 	 void cuoiBang();
@@ -200,10 +200,10 @@ private:
 	 }
  }
 
- inline void List::xemTheoThuTu(int pos)
+ inline void List::xemTheoThuTu(char pos)
  {
 	 switch (pos) {
-	 case 1: {
+	 case '1': {
 		 Node* i = this->head;
 		 Node* j = i->next;
 		 while (i != NULL) {
@@ -219,7 +219,7 @@ private:
 		 this->xemToanBoDanhSach(1);
 		 break;
 		}
-	 case 2: {
+			 case '2': {
 		 Node* i = this->head;
 		 Node* j = i->next;
 		 while (i != NULL) {
@@ -235,7 +235,7 @@ private:
 		 this->xemToanBoDanhSach(1);
 		 break;
 	 }
-	 case 3: {
+	 case '3': {
 		 Node* i = this->head;
 		 Node* j = i->next;
 		 while (i != NULL) {
@@ -251,6 +251,7 @@ private:
 		 this->xemToanBoDanhSach(1);
 		 break;
 	 }
+	 default: break;
 	 }
  }
 
@@ -364,11 +365,11 @@ private:
 	}
  }
 
- inline void List::timKiem(int pos)
+ inline void List::timKiem(char pos)
  {
 	 string chuoi;
 	 switch (pos) {
-	 case 1: {
+	 case '1': {
 		 cin.ignore();
 		 cout << "\t\t\t\tNhap ten sach "; getline(cin,chuoi);
 		 Node* check = this->head;
@@ -389,7 +390,7 @@ private:
 		 }
 		 break;
 		 }
-	 case 2: {
+	 case '2': {
 		 cin.ignore();
 		 cout << "\t\t\t\t\t\tNhap ten tac gia: "; getline(cin, chuoi);
 		 Node* check = this->head;
@@ -410,7 +411,7 @@ private:
 		 }
 		 break;
 	 }
-	 case 3: {
+	 case '3': {
 		 cin.ignore();
 		 cout << "\t\t\t\tNhap ten nha xuat ban: "; getline(cin, chuoi);
 		 Node* check = this->head;
@@ -431,6 +432,7 @@ private:
 		 }
 		 break;
 	 }
+	 default: break;
 	 }
  }
 
@@ -528,7 +530,7 @@ private:
 			 f << endl;
 		 }
 	 }
-	 cout << "Ghi File thanh cong !!" << endl;
+	 cout << "\t\t\t\t\t\tGHI FILE THANH CONG !" << endl;
 	 f.close();
  }
 
