@@ -8,6 +8,15 @@ class  List
 {
 public:
 	 List();
+	 void menu1();
+	 void menuchinh();
+	 void menu1a();
+	 void menu2();
+	 void menu3();
+	 void menu4();
+	 void menu5();
+	 void menu54();
+	 void menu6();
 	 void docTuFile();
 	 void init();
 	 void insertFirst(int x);
@@ -36,6 +45,126 @@ private:
 	 this->head = new Node();
 	 this->tail = new Node();
 }
+
+ inline void List::menu1()
+ {
+	 cout << "\n";
+	 cout << "\t\t\t\t\t\t _______________________________________________________________\n";
+	 cout << "\t\t\t\t\t\t|" << setw(45) << "<=: DE TAI :=> QUAN LY THU VIEN" << "                  |\n";
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|" << setw(40) << "GVHD : DO THI TUYET HOA" << "                       |\n";
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|" << setw(40) << "SVTH : DANG QUOC KHANH" << "                       |\n";
+	 cout << "\t\t\t\t\t\t|" << setw(32) << "Lop : 17T2" << "                               |\n";
+	 cout << "\t\t\t\t\t\t|" << setw(38) << "MSSV : 102170093" << "                         |\n";
+	 cout << "\t\t\t\t\t\t|" << setw(40) << "SVTH : DUONG CHI MANH" << "                       |\n";
+	 cout << "\t\t\t\t\t\t|" << setw(32) << "Lop : 16T2" << "                               |\n";
+	 cout << "\t\t\t\t\t\t|" << setw(38) << "MSSV : 102160103" << "                         |\n";
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+ }
+
+ inline void List::menuchinh()
+ {
+	 cout << "\t\t\t\t\t\t                          >>>>>***<<<<<                         " << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|               CHUC NANG CHINH CUA CHUONG TRINH                |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Khoi Tao Danh Sach va Doc File !                    |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Them 1 Cuon Sach Vao Danh Sach !                    |\n";
+	 cout << "\t\t\t\t\t\t|  3  |     Xoa 1 Cuon Sach Trong Danh Sach !                   |\n";
+	 cout << "\t\t\t\t\t\t|  4  |     Tim Kiem Sach !                                     |\n";
+	 cout << "\t\t\t\t\t\t|  5  |     Xem Danh Sach !                                     |\n";
+	 cout << "\t\t\t\t\t\t|  6  |     Muon va Tra Sach !                                  |\n";
+	 cout << "\t\t\t\t\t\t|  7  |     Luu File !                                          |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+ }
+
+ inline void List::menu1a()
+ {
+	 cout << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|               KHOI TAO DANH SACH VA DOC FILE                  |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Khoi tao muc sach rong !                            |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Doc tu file !                                       |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+ }
+
+ inline void List::menu2()
+ {
+	 cout << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|               THEM 1 CUON SACH VAO DANH SACH                  |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Them dau danh sach !                                |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Them sau vi tri: !                                  |\n";
+	 cout << "\t\t\t\t\t\t|  3  |     Them cuoi danh sach !                               |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+ }
+
+ inline void List::menu3()
+ {
+	 cout << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|                      CAC LUA CHON XOA SACH                    |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Theo ma so !                                        |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Theo ten sach !                                     |\n";
+	 cout << "\t\t\t\t\t\t|  3  |     Theo ten tac gia !                                  |\n";
+	 cout << "\t\t\t\t\t\t|  4  |     Dau danh sach !                                     |\n";
+	 cout << "\t\t\t\t\t\t|  5  |     Sau cuon sach co ma so !                            |\n";
+	 cout << "\t\t\t\t\t\t|  6  |     Cuoi danh sach !                                    |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+ }
+
+ inline void List::menu4()
+ {
+	 cout << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|                      CAC LUA CHON TIM KIEM                    |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Tim theo ten sach !                                 |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Tim theo ten tac gia !                              |\n";
+	 cout << "\t\t\t\t\t\t|  3  |     Tim theo ten nha xuat ban !                         |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+ }
+
+ inline void List::menu5()
+ {
+	 cout << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|                 CAC LUA CHON XEM DANH SACH                    |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Xem toan bo danh sach !                             |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Xem nhung cuon sach cho muon !                      |\n";
+	 cout << "\t\t\t\t\t\t|  3  |     Xem nhung cuon sach chua cho muon !                 |\n";
+	 cout << "\t\t\t\t\t\t|  4  |     Xem nhung cuon sach theo thu tu !                   |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+ }
+
+ inline void List::menu54()
+ {
+	 cout << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|                 CAC LUA CHON XEM THEO THU TU                  |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Xem dach theo van alphabet cua tac gia !            |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Xem danh sach theo van alphabet cua nha xuat ban !  |\n";
+	 cout << "\t\t\t\t\t\t|  3  |     Xem danh sach theo nam xuat ban !                   |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\tXEM THEO: ";
+ }
+
+ inline void List::menu6()
+ {
+	 cout << endl;
+	 cout << "\t\t\t\t\t\t _______________________________________________________________" << endl;
+	 cout << "\t\t\t\t\t\t|                 CAC LUA CHON MUON TRA SACH                    |" << endl;
+	 cout << "\t\t\t\t\t\t|_______________________________________________________________|\n";
+	 cout << "\t\t\t\t\t\t|  1  |     Muon sach !                                         |\n";
+	 cout << "\t\t\t\t\t\t|  2  |     Tra sach !                                          |\n";
+	 cout << "\t\t\t\t\t\t|_____|_________________________________________________________|\n";
+ }
 
  inline void List::docTuFile()
  {
@@ -111,10 +240,10 @@ private:
 	 cout << "\t\t\t\tTen tac gia: "; 
 	 getline(cin, text);
 	 b->data.setTacGia(text);
-	 cout << "\t\t\t\tNha xb: "; 
+	 cout << "\t\t\t\tNha xuat ban: "; 
 	 getline(cin, text);
 	 b->data.setNhaSX(text);
-	 cout << "\t\t\t\tNam xb: "; 
+	 cout << "\t\t\t\tNam xuat ban: "; 
 	 getline(cin, text);
 	 b->data.setNamXB(text);
 	 cout << "\t\t\t\tTrang thai(0-chua muon, 1-da muon): "; 
@@ -334,7 +463,7 @@ private:
 	 case 5: {
 		 string maso;
 		 cin.ignore();
-		 cout << "\t\t\t\tNhap maso: "; getline(cin, maso);
+		 cout << "\t\t\t\tNhap ma so sach: "; getline(cin, maso);
 		 Node* check = this->head;
 		 int index = 1;
 		 while (check != NULL) {
@@ -386,7 +515,7 @@ private:
 		 }
 		 this->cuoiBang();
 		 if (count == 1) {
-			 cout << "\t\t\t\t\t\tSACH KHONG CO TRONG THU VIEN !!!" << endl;
+			 cout << "\t\t\t\t\t\tSACH KHONG CO TRONG THU VIEN !" << endl;
 		 }
 		 break;
 		 }
@@ -407,7 +536,7 @@ private:
 		 }
 		 this->cuoiBang();
 		 if (count == 1) {
-			 cout << "\t\t\t\t\t\tTAC GIA KHONG CO TRONG THU VIEN !!!" << endl;
+			 cout << "\t\t\t\t\t\tTAC GIA KHONG CO TRONG THU VIEN !" << endl;
 		 }
 		 break;
 	 }
@@ -442,7 +571,7 @@ private:
 	 cout << "|                                                                                                                                                                |" << endl;
 	 cout << "|                                              CHAO MUNG CAC BAN DEN VOI THU VIEN TRUONG DH BACH KHOA - DH DA NANG                                               |" << endl;
 	 cout << "|________________________________________________________________________________________________________________________________________________________________|" << endl;
-	 cout << "| STT |      MaSach     |             Ten Sach              |TrangThaiSach|             Ten Tac Gia           |          NhaSanXuat            |   NamSanXuat    |" << endl;
+	 cout << "| STT |      Ma Sach    |             Ten Sach              |TrangThaiSach|             Ten Tac Gia           |         Nha Xuat Ban           |  Nam Xuat Ban   |" << endl;
 	 cout << "|_____|_________________|___________________________________|_____________|___________________________________|________________________________|_________________|" << endl;
  }
 
@@ -490,7 +619,7 @@ private:
 	 while (check != NULL) {
 		 if (check->data.getTen() == name && check->data.getTrangThai() == "0") {
 			 check->data.setTrangThai("1");
-			 cout << "\t\t\t\t\t\t>>> CHUC MUNG BAN DA MUON THANH CONG <<<";
+			 cout << "\t\t\t\t\t\t>>> CHUC MUNG BAN DA MUON THANH CONG <<<" << endl;
 			 return;
 		 }
 		 check = check->next;
@@ -506,7 +635,7 @@ private:
 	 while (check != NULL) {
 		 if (check->data.getTen() == name && check->data.getTrangThai() == "1") {
 			 check->data.setTrangThai("0");
-			 cout << "\t\t\t\t\t\t>>> CAM ON BAN DA SU DUNG SACH CUA THU VIEN <<<";
+			 cout << "\t\t\t\t\t\t>>> CAM ON BAN DA SU DUNG SACH CUA THU VIEN <<<" << endl;
 			 return;
 		 }
 		 check = check->next;
@@ -544,5 +673,3 @@ private:
  List::~ List()
 {
 }
-
- 
