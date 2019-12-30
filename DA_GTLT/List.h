@@ -516,7 +516,7 @@ private:
  inline void List::ghiFile()
  {
 	 fstream f;
-	 f.open("C:/Users/khanh/source/repos/DA_GTLT/text.txt", ios::out);
+	 f.open("text.txt", ios::out);
 	 Node* check = this->head;
 	 while (check != NULL) {
 		 f << check->data.getTen()<<endl;
